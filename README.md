@@ -17,10 +17,9 @@ My journey stands as a testament to my unwavering commitment to excellence and i
 - [Features](#features)
 - [Getting Started](#getting-started)
   - [Project Architecture](#project-architecture)
-  - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Configuration](#configuration)
-- [Recources](#resources)
+- [Resources](#resources)
 
 ## Features
 
@@ -84,6 +83,21 @@ Here explain more about CGI how it's Work
 ![Cgi](assets/Cgi.png)
 
 ****
+
+### Installation
+
+- To install WebServ, follow these steps:
+
+   ```sh
+     https://github.com/Farouk-Echaref/webserv
+     cd webServ
+     make
+   ```
+- run the webserver
+  ```
+    ./webserv /path/to/config.conf
+  ```
+
 
 ## Configuration
 
@@ -187,7 +201,7 @@ server {
 }
 ```
 
-## Resouces
+## Resources
 
 * https://beej.us/guide/bgnet/html/split/system-calls-or-bust.html
 * https://web.archive.org/web/20100127161358/http://hoohoo.ncsa.illinois.edu/cgi/
