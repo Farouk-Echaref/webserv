@@ -1,10 +1,6 @@
 # WebServ_42
 
-In this project, we will build our own web server. First, let's define what a web server is. A web server is a computer program that delivers web pages to users. When you visit a website, your web browser sends a request to the web server. The web server then sends the requested web page back to your web browser.
-
-Many people use the internet to watch movies or send messages. The videos and images that you watch or send are stored in the cloud. The cloud is a network of servers that store data. When you watch a movie or send a message, the web server retrieves the video or image from the cloud and sends it to your web browser.
-
-In this project, we will build a web server that can store and deliver web pages. We will use the Python programming language to create our web server.
+Using Object-Oriented Programming and the Finite State Machine design pattern, an with the power of SOLID Principles, I embarked on a C++ journey with Webserv. In collaboration with my team, we crafted a high-performance web server that boasts several key features. These include a configuration file with its unique syntax, drawing inspiration from Nginx, non-blocking behavior achieved through I/O Multiplexing, support for multiple ports, precise HTTP response handling, and a range of captivating functionalities such as uploading files with large sizes to the server, cookie management, sessions, and CGI support (with compatibility for Python and Perl). It is a web server that is compliant with the HTTP Protocol, and conditionally compliant with the RFC manual. My journey stands as a testament to my unwavering commitment to excellence and innovation, demonstrating my ability to harness the power of C++ to create a remarkable digital asset.
 
 ![web-servers](https://github.com/Farouk-Echaref/webserv/assets/66710845/fc379cc0-0ceb-4eb4-bd0c-eb5c93d191a3)
 
