@@ -12,7 +12,30 @@ My journey stands as a testament to my unwavering commitment to excellence and i
 
 ![web-servers](https://github.com/Farouk-Echaref/webserv/assets/66710845/fc379cc0-0ceb-4eb4-bd0c-eb5c93d191a3)
 
+## Table of Contents
 
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Project Architecture](#project-architecture)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Configuration](#configuration)
+- [License](#license)
+
+## Features
+
+- **WebSockets:** WebServ supports WebSockets, enabling real-time, bidirectional communication between clients and the server.
+
+- **I/O Multiplexing:** Utilizing the select mechanism, WebServ efficiently manages multiple connections, making it suitable for handling high loads.
+
+- **HTTP Methods:** WebServ handles common HTTP methods such as POST, GET, and DELETE, allowing you to build dynamic web applications.
+
+- **Design Patterns:** The project built on the Finite State Machine design pattern and follows SOLID principles and employs the Singleton design pattern, ensuring clean, maintainable code.
+
+- **Data Mapping:** The entire project is mapped, simplifying data manipulation and enhancing code readability and efficiency.
+
+
+## Project Architecture
 
 ### Socket-Bind-listing-connection
 ![S_B_L_C](assets/connection.png)
