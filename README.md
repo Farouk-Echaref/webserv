@@ -1,6 +1,14 @@
 # WebServ_42
 
-Using Object-Oriented Programming and the Finite State Machine design pattern, an with the power of SOLID Principles, I embarked on a C++ journey with Webserv. In collaboration with my team, we crafted a high-performance web server that boasts several key features. These include a configuration file with its unique syntax, drawing inspiration from Nginx, non-blocking behavior achieved through I/O Multiplexing, support for multiple ports, precise HTTP response handling, and a range of captivating functionalities such as uploading files with large sizes to the server, cookie management, sessions, and CGI support (with compatibility for Python and Perl). It is a web server that is compliant with the HTTP Protocol, and conditionally compliant with the RFC manual. My journey stands as a testament to my unwavering commitment to excellence and innovation, demonstrating my ability to harness the power of C++ to create a remarkable digital asset.
+Using Object-Oriented Programming and the Finite State Machine design pattern, an with the power of SOLID Principles, I embarked on a C++ journey with Webserv.
+
+In collaboration with my team, we crafted a high-performance web server that boasts several key features. 
+
+These include a configuration file with its unique syntax, drawing inspiration from Nginx, non-blocking behavior achieved through I/O Multiplexing, support for multiple ports, precise HTTP response handling, and a range of captivating functionalities such as uploading files with large sizes to the server, cookie management, sessions, and CGI support (with compatibility for Python and Perl). 
+
+It is a web server that is compliant with the HTTP Protocol, and conditionally compliant with the RFC manual. 
+
+My journey stands as a testament to my unwavering commitment to excellence and innovation, demonstrating my ability to harness the power of C++ to create a remarkable digital asset.
 
 ![web-servers](https://github.com/Farouk-Echaref/webserv/assets/66710845/fc379cc0-0ceb-4eb4-bd0c-eb5c93d191a3)
 
