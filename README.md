@@ -6,8 +6,9 @@ Many people use the internet to watch movies or send messages. The videos and im
 
 In this project, we will build a web server that can store and deliver web pages. We will use the Python programming language to create our web server.
 
+![web-servers](https://github.com/Farouk-Echaref/webserv/assets/66710845/fc379cc0-0ceb-4eb4-bd0c-eb5c93d191a3)
 
-![HTTP](assets/web-servers.png)
+
 
 ### Socket-Bind-listing-connection
 ![S_B_L_C](assets/connection.png)
