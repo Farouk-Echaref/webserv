@@ -20,7 +20,7 @@ My journey stands as a testament to my unwavering commitment to excellence and i
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Configuration](#configuration)
-- [License](#license)
+- [Recources](#resources)
 
 ## Features
 
@@ -34,31 +34,32 @@ My journey stands as a testament to my unwavering commitment to excellence and i
 
 - **Data Mapping:** The entire project is mapped, simplifying data manipulation and enhancing code readability and efficiency.
 
+## Getting Started
 
-## Project Architecture
+### Project Architecture
 
-### Socket-Bind-listing-connection
+#### Socket-Bind-listing-connection
 ![S_B_L_C](assets/connection.png)
-### Socket:
+#### Socket:
 Sockets allow communication between two different processes on the same or different machines.
 ![Socket](assets/socket.png)
 
-### Bind
+#### Bind
 
 bind is a system call that associates a socket with a local address and port number. This allows the socket to receive connections from other computers on the network.
 
 ![Bind](assets/bind.png)
 
-### listen
+#### listen
 is used to listen for incoming connections on a socket. The listen() function takes two arguments: the first argument is the socket file descriptor, and the second argument is the backlog queue size.
 The backlog queue size is the maximum number of connections that can be queued before the system starts refusing connections.
 
-### accept
+#### accept
 
 is used to accept an incoming connection on a socket. The accept() function takes two arguments: the first argument is the socket file descriptor, and the second argument is a pointer to a sockaddr structure, which will be filled in with the address of the client that connected.
 
 ---
-## HTTP 
+#### HTTP 
 
 HTTP stands for HyperText Transfer Protocol. It is a set of rules for exchanging data between a client and a server. HTTP is the foundation of the World Wide Web, and it is used to transfer all kinds of data, including HTML pages, images, videos, and files.
 Here explain all of the previews :
@@ -71,7 +72,7 @@ Here explain all of the previews :
 
 
 ****
-## CGI :
+#### CGI :
 - **CGI** : (Common Gateway Interface) is used to provide a dynamic content to the user. It is a standard way for web servers to interact with external programs. CGI programs are typically written in scripting languages such as Perl, Python, or PHP.
 
 When a user requests a page that contains a CGI script, the web server will execute the script and return the results to the user. This allows web servers to generate dynamic content, such as personalized web pages or interactive forms.
@@ -84,7 +85,7 @@ Here explain more about CGI how it's Work
 
 ****
 
-### Configuration
+## Configuration
 
 WebServ is highly configurable, allowing you to use a custom configuration file. To specify a custom configuration file, create a .conf configuration file (e.g., `my_config.conf`) with the desired settings:
 
@@ -186,7 +187,7 @@ server {
 }
 ```
 
-### Resouces
+## Resouces
 
 * https://beej.us/guide/bgnet/html/split/system-calls-or-bust.html
 * https://web.archive.org/web/20100127161358/http://hoohoo.ncsa.illinois.edu/cgi/
