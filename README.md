@@ -84,6 +84,108 @@ Here explain more about CGI how it's Work
 
 ****
 
+### Configuration
+
+WebServ is highly configurable, allowing you to use a custom configuration file. To specify a custom configuration file, create a .conf configuration file (e.g., `my_config.conf`) with the desired settings:
+
+```conf
+#Upload Server
+server {
+	listen 6969 7000;
+	server_name 127.0.0.1;
+	upload ./www/upload;
+	cgi ./www/cgi_files;
+	location / {
+		autoindex on;
+        
+		root ./www/upload;
+		index upload.html;
+	}
+	location /cgi_files {
+		root ./www/cgi_files;
+	}
+	
+	allow GET POST;
+
+	# max_body_size 0;
+	autoindex on;
+	# return 302 https://www.youtube.com/;
+}
+
+
+#Main Server
+server {
+	listen 5000 9999;
+	server_name 127.0.0.1;
+	cgi ./www/cgi_files;
+
+	location / {
+		autoindex on;
+        
+		root ./www/cgi;
+		index cgi.html;
+	}
+
+	location /cgi_files {
+		root ./www/cgi_files;
+	}
+	
+	allow GET POST ;
+	# max_body_size 8;
+	# autoindex on;
+	# return 302 https://www.youtube.com/;
+	# location /404.html {
+	# 	root /var/www/html/;
+	# }
+}
+
+#Delete server
+server {
+	listen 9000;
+	server_name 127.0.0.1;
+
+	allow DELETE;
+	location / {
+		root ./www/random;
+		index page.html;
+	}
+
+}
+
+#Main Server
+server {
+	listen 8001;
+	server_name 127.0.0.1;
+	root ./www;
+	location / {
+		autoindex on;
+        
+		root ./www/cgi;
+		index index.html;
+	}
+	location /images {
+		autoindex on;
+		root ./www/images;
+
+		# index index.html;
+	}
+	location /cgi_bin {
+        root ./www/html/cgi_bin;
+        allow GET POST;
+        index hello.html;
+        path_info .py /usr/bin/python3;
+        path_info .php ./php-cgi;
+    }
+	allow POST GET;
+	# max_body_size 8;
+	# autoindex on;
+	# return 302 https://www.youtube.com/;
+	location /404.html {
+		root /var/www/html/;
+	}
+}
+```
+
 ### Resouces
 
 * https://beej.us/guide/bgnet/html/split/system-calls-or-bust.html
